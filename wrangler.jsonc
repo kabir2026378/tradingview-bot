@@ -1,3 +1,4 @@
+cat > wrangler.jsonc << 'EOF'
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "tradingview-bot",
@@ -7,10 +8,8 @@
     "nodejs_compat",
     "global_fetch_strictly_public"
   ],
-  "assets": {
-    "directory": "./public"
-  },
   "vars": {
     "SECURITY_KEY": "my-coinbase-passphrase"
   }
 }
+EOF
