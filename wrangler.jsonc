@@ -1,4 +1,3 @@
-cat > wrangler.jsonc << 'EOF'
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "tradingview-bot",
@@ -12,4 +11,3 @@ cat > wrangler.jsonc << 'EOF'
     "SECURITY_KEY": "my-coinbase-passphrase"
   }
 }
-EOF
