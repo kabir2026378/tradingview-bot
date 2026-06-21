@@ -3,14 +3,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "deploy": "wrangler deploy",
-    "start": "wrangler deploy && wrangler tail --format pretty"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240605.1",
-    "wrangler": "^4.103.0"
+    "start": "node server.js"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^4.18.2"
   }
 }
