@@ -9,5 +9,8 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240605.1",
     "wrangler": "^4.103.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }

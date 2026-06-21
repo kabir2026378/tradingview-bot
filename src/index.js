@@ -20,11 +20,11 @@ export default {
       const method = 'POST';
       const requestPath = '/api/v3/brokerage/orders';
       const orderBody = JSON.stringify({
-        product_id: 'BTC-USD',
+        product_id: 'XLM-USDC',
         side: signal === 'Buy' || signal === 'buy' ? 'BUY' : 'SELL',
         order_type: 'MARKET',
         market_market_ioc: {
-          quote_size: '50'
+          quote_size: '5'
         }
       });
 
@@ -82,7 +82,7 @@ export default {
 
       return new Response(JSON.stringify({
         success: true,
-        message: `$50 ${signal} order executed`,
+        message: `$5 ${signal} order executed on XLM-USDC`,
         orderId: result.order_id || result.id,
         order: result
       }), {
